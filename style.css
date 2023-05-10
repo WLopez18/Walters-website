@@ -116,6 +116,8 @@ span {
     font-size: 1.6rem;
 }
 
+/* About Section CSS */
+
 .about {
     display: flex;
     justify-content: center;
@@ -135,6 +137,12 @@ span {
     font-size: 4.5rem;
 }
 
+.about-content {
+    border: .5rem solid black;
+    padding: 0 2rem;
+    background-color: var(--bg-color);
+}
+
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
@@ -147,6 +155,17 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+.about-content ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content ul li {
+    display: grid;
+
+    font-size: 1.6rem;
 }
 
 /* Project Section CSS */
@@ -177,10 +196,9 @@ span {
 }
 
 .contact-socials-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
     gap: 2rem;
 }
 
@@ -202,6 +220,11 @@ span {
 .contact-socials-container div i {
     font-size: 7rem;
     color: var(--main-color);
+    transition: .5s ease;
+}
+
+.contact-socials-container div i:hover {
+    color: var(--bg-color);
 }
 
 .contact-socials-container div h3 {
