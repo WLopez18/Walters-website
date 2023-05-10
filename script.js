@@ -25,5 +25,8 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.about-img', { origin: 'right' });
+ScrollReveal().reveal('.welcome-line', { origin: 'top', delay: 1000 });
+ScrollReveal().reveal('.home-content p', { origin: 'top', delay: 2000 });
+ScrollReveal().reveal('.about-img, .linkedin-box, .codepen-box', { origin: 'right' });
 ScrollReveal().reveal('.resume-img, .portfolio-box', { origin: 'bottom' });
+ScrollReveal().reveal('.about-content, .email-box, .github-box', { origin: 'left' });
